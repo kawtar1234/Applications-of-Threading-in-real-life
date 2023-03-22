@@ -1,6 +1,7 @@
 # Applications-of-Threading-in-real-life
                                           Digital Watch App:
-    - Problem: 
+   
+   - Problem: 
 A digital watch application needs to provide the user with some information such as the time, date, and weather but the weather information is fetched from an external API and can take several seconds to load, causing the UI to lag.  
     - Solution: 
 Multi-threading can be used to fetch the weather information in the background without blocking the UI. So, that the user can navigate and use the interface while other features are running in the background without causing any delay or lag. Here's an example of how this can be done in Java:
@@ -66,6 +67,7 @@ This app uses two threads: one for updating the time and date on the UI, and ano
 The UI thread updates the time and date every second, while the weather thread fetches the weather information every 5 minutes and updates the UI.
 
                                             Smart TV App: 
+
 A Smart TV application works as follows: process user inputs and stream video content simultaneously.
 - Problem: 
 The video decoder can block the UI thread. As a consequence, the app might  become unresponsive.
