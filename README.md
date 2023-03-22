@@ -6,7 +6,7 @@ A digital watch application needs to provide the user with some information such
     - Solution: 
 Multi-threading can be used to fetch the weather information in the background without blocking the UI. So, that the user can navigate and use the interface while other features are running in the background without causing any delay or lag. Here's an example of how this can be done in Java:
 
-/////////////////
+
 public class WatchApp {
     public static void main(String[] args) {
         // Start the UI thread
@@ -60,7 +60,7 @@ public class WatchApp {
         // Update the weather display on the UI
     }
 }
-/////////////////
+
 
   - Explanation:
 This app uses two threads: one for updating the time and date on the UI, and another for fetching the weather information in the background.
@@ -74,7 +74,7 @@ The video decoder can block the UI thread. As a consequence, the app might  beco
 - Solution:
 To solve the problem we can use Multi-threading. It will process user inputs and stream video content on separate threads.
 Here's an example of how this can be done in Android:
-///////////////
+
 
 public class TvApp extends Activity {
     private VideoPlayer videoPlayer;
@@ -117,7 +117,6 @@ public class TvApp extends Activity {
         }
     }
 }
-///////////////
 
    - Explanation:
 
