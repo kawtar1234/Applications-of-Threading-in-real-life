@@ -15,8 +15,7 @@ public class WatchApp {
                 // Update the UI with the current time and date
                 updateTime();
                 updateDate();
-                
-                try {
+                 try {
                     // Sleep for one second before updating again
                     Thread.sleep(1000);
                 } catch (InterruptedException e) {
@@ -79,7 +78,6 @@ Here's an example of how this can be done in Android:
 public class TvApp extends Activity {
     private VideoPlayer videoPlayer;
     private InputProcessor input processor;
-    
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
